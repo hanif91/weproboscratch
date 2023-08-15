@@ -14,6 +14,10 @@
   }
 
   .section {
-    @apply container py-24
+    @apply container py-8
+  }
+
+  .sectiontop {
+    @apply container pt-16 pb-8
   }
 }

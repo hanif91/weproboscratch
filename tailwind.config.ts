@@ -19,6 +19,14 @@ module.exports = {
       Poppins: "Poppins"
     },
     extend: {
+      backgroundImage: {
+        "water-image" : "url('/images/hero/water.png')",
+      },
+
+      backgroundSize: {
+        '300%': '300%',
+      },
+
       textColor : {
         'txtprimary' : '#212121',
         'txtsecondary' : '#757575',
@@ -109,12 +117,23 @@ module.exports = {
         slide : {
           "0%,100%" : {transform: "translateX(5%)"},
           "50%": {transform: "translateX(-120%)"}
-        }
+        },
+        "wiggle" : {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        animatedgradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        slide: "slide 25s linear infinite"
+        slide: "slide 25s linear infinite",
+        "wiggle": 'wiggle 1s ease-in-out infinite',
+        gradient: 'animatedgradient 3s ease infinite alternate',
       },
     },
     screens: {
