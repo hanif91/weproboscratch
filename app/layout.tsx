@@ -5,6 +5,8 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/container/Footer'
 import Navbar from '@/components/Navbar'
 
+import  NavbarMobile  from '@/components/navbarMobile/NavbarMobile'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -21,6 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-Poppins ${inter.className}`}>
         <Navbar/>  
+        <NavbarMobile />
+
         {children}
         <Footer/>  
       </body>

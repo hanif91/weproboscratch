@@ -14,7 +14,7 @@ function Hero() {
       <div className='flex flex-col md:flex-row justify-center items-center place-content-center '>
         <div className='grow flex-1 w-auto text-center'>
           <div className=''>
-            <div className='animate-bounce text-xs pt-3 font-extrabold md:text-2xl  text-myprimary-500'>
+            <div className='text-xs pt-3 font-extrabold md:text-2xl text-transparent bg-clip-text bg-gradient-to-l from-myprimary-400 to-myprimary-700 bg-300% animate-gradient duration-3000'>
    
               Perumda Air Minum Bayuangga
               
@@ -27,7 +27,7 @@ function Hero() {
             
             <div className=' text-sm leading-5 pt-3 md:text-xl font-bold text-txtsecondary'>
               Air Kami di olah langsung dari Sumber Mata Air terbaik di Kota Probolinggo yaitu Sumber Mata Air  
-              <span className='text-transparent bg-clip-text bg-gradient-to-l from-mysecondary-500 to-myprimary-500 bg-300% animate-gradient duration-1000'> Ronggojalu</span>
+              <span className='text-transparent bg-clip-text bg-gradient-to-l from-mysecondary-500 to-myprimary-500 bg-300% animate-gradient duration-2000'> Ronggojalu</span>
             </div>
           </div>
           
