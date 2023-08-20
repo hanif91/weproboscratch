@@ -70,6 +70,13 @@ const menuData: Menu[] = [
         path: "/",
         href : "struktur",
         newTab: false
+      },
+      {
+        id: 36,
+        title: "Dokument Publik",
+        path: "/",
+        href : "Doc Publik",
+        newTab: false
       }
     ]
   },
@@ -82,13 +89,6 @@ const menuData: Menu[] = [
   },
   {
     id: 5,
-    title: "Dokumen Publik",
-    path: "/public-doc",
-    href : "publicdoc",
-    newTab: false,
-  },
-  {
-    id: 6,
     title: "Kontak Kami",
     path: "/contact",
     href : "contact",

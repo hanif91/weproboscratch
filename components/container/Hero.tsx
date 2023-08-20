@@ -10,9 +10,9 @@ function Hero() {
   const [isAnimating, setIsAnimating] = useState(false)
 
   return (
-    <div className='sectiontop' id='home'>
+    <div className='section relative' id='home'>
       <div className='flex flex-col md:flex-row justify-center items-center place-content-center '>
-        <div className='grow flex-1 w-auto text-center'>
+        <div className='flex-1 w-auto text-center '>
           <div className=''>
             <div className='text-xs pt-3 font-extrabold md:text-2xl text-transparent bg-clip-text bg-gradient-to-l from-myprimary-400 to-myprimary-700 bg-300% animate-gradient duration-3000'>
    
@@ -21,7 +21,7 @@ function Hero() {
             </div>
 
             <div className=' text-3xl pt-3 md:text-5xl font-bold text-txtprimary'>
-                Pelayanan Air Bersih Untuk Masyarakat <span className=''><br/></span> <span className='text-transparent bg-clip-text bg-gradient-to-l from-mysecondary-500 to-myprimary-500 bg-300% animate-gradient'> Kota Probolinggo </span>
+                Pelayanan Air Bersih Untuk Masyarakat <span className=''><br/></span> <span className='bg-primarygrient'> Kota Probolinggo </span>
             </div>
 
             

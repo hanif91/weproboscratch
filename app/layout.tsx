@@ -5,7 +5,6 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/container/Footer'
 import Navbar from '@/components/Navbar'
 
-import  NavbarMobile  from '@/components/navbarMobile/NavbarMobile'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,11 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-Poppins ${inter.className}`}>
-        <Navbar/>  
-        <NavbarMobile />
-
-        {children}
-        <Footer/>  
+        <main className='container myborder-ct bg-gray-200 min-w-[350px]'>
+          <div className='flex flex-col h-screen '>
+            <Navbar/>  
+            <div className='flex-1 overflow-y-scroll scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-200'>
+              {children}
+    
+                <Footer/> 
+            </div>
+      
+          </div>
+        </main>
       </body>
     </html>
   )

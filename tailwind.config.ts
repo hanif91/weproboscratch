@@ -10,7 +10,6 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
@@ -19,6 +18,10 @@ module.exports = {
       Poppins: "Poppins"
     },
     extend: {
+      boxShadow: {
+        'x': '0px 10px 20px 0px rgba(0, 0, 0, 0.3)'
+      },
+
       backgroundImage: {
         "water-image" : "url('/images/hero/water.png')",
       },
@@ -142,5 +145,7 @@ module.exports = {
       md: "1060px",
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+  require('tailwind-scrollbar'),
+  require("@tailwindcss/aspect-ratio")],
 }
